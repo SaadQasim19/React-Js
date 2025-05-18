@@ -1,0 +1,29 @@
+PROPS CAN PASS : Str , num , bol , Arr , Obj , func , React Elements.
+
+function Info({ name, age, isAdmin, skills, details, greet }) {
+  return (
+    <div>
+      <p>Name: {name}</p>
+      <p>Age: {age}</p>
+      <p>Admin? {isAdmin ? "Yes" : "No"}</p>
+      <p>Skills: {skills.join(", ")}</p>
+      <p>Country: {details.country}</p>
+      <button onClick={greet}>Greet</button>
+    </div>
+  );
+}
+
+function App() {
+  const sayHello = () => alert("Hello!");
+
+  return (
+    <Info
+      name="Fahad"
+      age={25}
+      isAdmin={true}
+      skills={['React', 'JS', 'CSS']}
+      details={{ country: 'Pakistan', city: 'Karachi' }}
+      greet={sayHello}
+    />
+  );
+}

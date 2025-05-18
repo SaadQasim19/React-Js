@@ -1,0 +1,20 @@
+1 : ---Named Export---
+export const Header = () => {
+  return <h1>My App</h1>;
+};
+
+
+import Header from './Header'; 
+
+2 : Default Export
+
+const Header = () => {
+  return <h1>My App</h1>;
+};
+
+export default Header;
+
+import { Header } from './Header'; 
+
+CSS:
+import './index.css';

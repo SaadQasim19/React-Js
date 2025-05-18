@@ -1,0 +1,15 @@
+git init
+git add .  
+git commit -m "Initial commit with index.js"
+ 
+git remote add origin https://github.com/SaadQasim19/React-Js
+git push -u origin master
+
+
+once init:
+
+git add .
+git commit -m "--"
+git push 
+
+git remote -v = checks with repo is Initialized 

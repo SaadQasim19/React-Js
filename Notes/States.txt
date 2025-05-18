@@ -1,0 +1,5 @@
+State ek aisi jagah hai jahan component apna dynamic data store karta hai.
+
+Ye data change ho sakta hai (unlike props jo read-only hote hain).
+
+Jab state change hoti hai, component apne aap re-render ho jata hai taake UI update ho jaye.

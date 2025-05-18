@@ -1,0 +1,52 @@
+Passing Objects into State: Spread Operator.
+
+🧠 1. Jab State Ek Object ho (e.g. Form data)
+
+will use Spread OP if : Aap kisi state object ya array ka sirf ek part update karna chahte ho, puri state ko overwrite kiye bina.
+
+import React, { useState } from 'react';
+
+export default function SimpleForm() {
+  const [form, setForm] = useState({
+    name: '',
+    email: ''
+  });
+
+//if user just changes name , via basic method , email will lost , that is why we use spread operator .
+it will work dynamically replace name with email , simply no data will lost.
+
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  return (
+    <div>
+      <h2>Simple Form</h2>
+
+      <input
+        name="name"
+        placeholder="Name"
+        value={form.name}
+        onChange={handleChange}
+      />
+      <br /><br />
+
+      <input
+        name="email"
+        placeholder="Email"
+        value={form.email}
+        onChange={handleChange}
+      />
+      <br /><br />
+
+      <p>Name: {form.name}</p>
+      <p>Email: {form.email}</p>
+    </div>
+  );
+}
+
+
