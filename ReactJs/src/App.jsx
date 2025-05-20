@@ -1,6 +1,7 @@
 import Parent from './Components/Parent';
 import Child_1 from './Components/Child_1';
 import State from './Components/State';
+import Reducer from './Components/Reducer';
 import './App.css';
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
       <Parent  />
       <Child_1 name="Childs Description" age={10} />
       <State />
+      <Reducer />
     </div>
   )
 }
