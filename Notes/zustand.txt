@@ -1,0 +1,17 @@
+zustand is an simplest state management toolkit less complex than redux and context api . 
+
+syntax:
+import {create} from 'zustand';
+
+const useXYZ = create((set)=>({
+    count:0;
+    increase: ()=>set((state)=>({count:state.count + 1})),
+    reset: ()=> set({count:0})
+    
+}));
+
+
+usage:
+const count = useStore((state) => state.count);
+const increase = useStore((state) => state.increase);
+

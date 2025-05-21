@@ -3,6 +3,9 @@ import Child_1 from './Components/Child_1';
 import State from './Components/State';
 import Reducer from './Components/Reducer';
 import Effect from './Components/Effect';
+import CounterDisplay from './Zustand/CounterDisplay';
+import CounterButtons from './Zustand/CounterButtons';
+import CounterReset from './Zustand/CounterReset';
 import './App.css';
 function App() {
   
@@ -15,6 +18,11 @@ function App() {
       <State />
       <Reducer />
       <Effect />
+      <br />
+      <h2>ZuStand Example</h2>
+      <CounterDisplay />
+      <CounterButtons />
+      <CounterReset />
     </div>
   )
 }
