@@ -1,0 +1,55 @@
+PURPOSE:
+
+React components render karne ke liye banaye gaye hote hain. Lekin kabhi-kabhi aapko:
+
+    API se data fetch karna ho
+
+    LocalStorage set/get karna ho
+
+    DOM manually access karna ho
+
+    Timers lagane ho (setInterval, setTimeout)
+
+    Window resize ya scroll events sunne ho
+
+Ye sab kaam side effects kehlate hain — inko React khud nahi karta. Isiliye hume useEffect chahiye hota hai.
+
+Syntax:
+
+import {useEffect} from 'react';
+
+useEffect(()=>{
+    //code
+
+    //cleaner function
+    return ()=>{
+        console.log("component unmounted);
+    }
+})                         ✅ Har render ke baad chalega (agar dependency array na do)
+OR
+useEffect(()=>{
+    //code
+
+    //cleaner function
+    return ()=>{
+        console.log("component unmounted);
+    }
+},[])                   ✅ Sirf component mount pe chalega
+
+useEffect(()=>{
+    //code
+
+    //cleaner function
+    return ()=>{
+        console.log("component unmounted);
+    }
+},[count])             ✅ Jab koi dependency change ho (e.g., count)
+
+
+
+Clearing : to quit programs running behind . save memory e.t.c chahiye...
+
+clearTimeout(timeout--varname)
+removeEventListener("",funcName)
+socket.close()
+
