@@ -9,6 +9,7 @@ export default function Effect() {
     setCount(count + 1);
   };
 
+//* -------------------------  useEffect-Showing simple mounting with time --------------------------
   useEffect(() => {
     const timeOut = setTimeout(() => {
         console.log("Component mounted");
@@ -21,7 +22,7 @@ export default function Effect() {
         clearTimeout(timeOut);
       console.log("Component unmounted");
     };
-  });
+  },[count]);
 
   //* --------------------------------  Api Calling -----------------------------------
 

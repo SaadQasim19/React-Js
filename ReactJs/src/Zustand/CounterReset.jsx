@@ -1,4 +1,4 @@
-import  useStore  from "zustand"
+import  useStore  from "./store.js";
 
 export default function CounterReset(){
 

@@ -61,9 +61,9 @@ export default function Reducer() {
     >
       <h1>Reducer</h1>
       <p>Count: {state.count}</p>
-      <button onClick={() => dispatch({ type: "increment" })}>Click: +</button>
+      <button onClick={() => dispatch({ type: "increment" })}>Reducer: +</button>
       <br />
-      <button onClick={() => dispatch({ type: "decrement" })}>-</button>
+      <button onClick={() => dispatch({ type: "decrement" })}>Reducer: -</button>
       <br />
       <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
 

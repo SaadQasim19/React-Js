@@ -1,6 +1,6 @@
- import {useReducer} from 'react'
+import {useReducer} from 'react'
 
- const[state , dispatch] = useReducer(reducerFunction , initialState);
+const[state , dispatch] = useReducer(reducerFunction , initialState);
 
 reducerFunction: A function that decides how to update state based on an action.
 
@@ -9,3 +9,5 @@ function reducer(state , action){
 }
 
 initialState: Usually Object.
+
+
