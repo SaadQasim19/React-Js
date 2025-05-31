@@ -1,3 +1,6 @@
+useReducer is a React Hook that provides an alternative to useState for managing complex state logic in a more structured way.
+Reducer is a pure function that takes the current state and an action, then returns the new state.
+
 import {useReducer} from 'react'
 
 const[state , dispatch] = useReducer(reducerFunction , initialState);
