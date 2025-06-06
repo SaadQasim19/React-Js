@@ -1,0 +1,21 @@
+Routers:
+React Router aik library hai jo React apps ke liye client-side routing ka feature deti hai.
+
+PURPOSE:
+React normally ek single page app hota hai — jab tum kisi aur page par jaatay ho (e.g., /about, /contact) to page reload nahi hota — React Router hi yeh manage karta hai.
+
+
+npm i react-router-dom
+
+main.jsx mein import karna hai:
+import { BrowserRouter } from 'react-router-dom';
+
+and use it like this:
+
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+
+Route vs Link:
+
+<Routes> and <Route> — Define what to show at which URL.
