@@ -19,3 +19,21 @@ and use it like this:
 Route vs Link:
 
 <Routes> and <Route> — Define what to show at which URL.
+
+
+Multiple Components : 
+
+<Routes>
+<Route path="/" element={
+  call all Components here , which you want to be in home
+}>
+
+Correct way hy Component mein ko pass kia jaey route element mein k sb ko {}
+
+---------- Should we remove routes --> path , if used Link ? ----------
+No , 
+You must define both:
+
+    <Link> for navigation
+
+    <Route> for rendering the component
