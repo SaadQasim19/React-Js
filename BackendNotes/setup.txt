@@ -1,0 +1,17 @@
+Easiest Backend Setup -- JSON SERVER....
+
+npm i -g json-server
+
+Create a db.json file in the root of your project with the following content:
+
+{
+  "posts": [
+    { "id": 1, "title": "Hello World", "content": "This is my first post" }
+  ]
+}
+Then run the following command in your terminal:
+json-server --watch db.json
+This will start a JSON server that serves the data in db.json at http://localhost:3000/posts.
+OR
+json-server --watch db.json --port 3001
+You can also specify a different port if you want to avoid conflicts with other services. For example, to run the server on port 3001, you would use:

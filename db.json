@@ -1,0 +1,25 @@
+{
+    "students": [
+        {
+            "id": 7665,
+            "name": "Muhammad Saad Qasim",
+            "age": 19,
+            "school": "Fazaia Degree College MRF",
+            "grade": "A"
+        },
+        {
+            "id": 7666,
+            "name": "Kashmala Malik",
+            "age": 18,
+            "school": "Fazaia Degree College MRF",
+            "grade": "A"
+        },
+        {
+            "id": 9416,
+            "name": "Aleena Arzoo",
+            "age": 20,
+            "school": "Fazaia Degree College MRF",
+            "grade": "B"
+        }
+    ]
+}

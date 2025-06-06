@@ -7,6 +7,8 @@ import CounterDisplay from "./Zustand/CounterDisplay";
 import CounterButtons from "./Zustand/CounterButtons";
 import CounterReset from "./Zustand/CounterReset";
 import Form from "./Components/Form";
+import API from "./Api/API";
+import DB from "./Api/DB";
 import "./App.css";
 function App() {
   return (
@@ -25,6 +27,12 @@ function App() {
       <br />
 
       <Form />
+      <br />
+      <br />
+      <API />
+      <br />
+      <br />
+      <DB />
     </div>
   );
 }

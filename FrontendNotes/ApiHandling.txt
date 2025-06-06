@@ -1,0 +1,20 @@
+Concepts To be Used:
+
+useEffect: run when component mounts
+useState: to store the fetched data.
+async/await: to handle asynchronous API calls.
+Zustand: for state management. share data globally.
+
+'https://jsonplaceholder.typicode.com/posts'
+
+
+To Display Data in Cards:
+
+ <div className="card-container">
+            {data.map((post) => (
+              <div className="post-card" key={post.id}>
+                <h2 className="card-title">{post.title}</h2>
+                <p className="card-id">Post ID: {post.id}</p>
+                <p className="card-body">{post.body}</p>
+              </div>
+              ))}
