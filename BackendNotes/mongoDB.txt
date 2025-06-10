@@ -1,0 +1,5 @@
+
+npm init -y
+npm install express mongoose dotenv cors
+
+.gitognore : good: make one .gitognore file outside Frontend and backend  , if you write once node_modules it will accpet both from frontend and backend.
