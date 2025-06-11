@@ -1,1 +1,1 @@
-//* DB Connection here..
+//* Related to MongoDB connection.

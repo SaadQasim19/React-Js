@@ -1,20 +1,11 @@
-//* # Logic for handling requests..
+//* This is a user controller for handling user-related operations.
 
-import User from "../models/user_model.js";
+import { User } from '../models/user.js';
 
-//& GET USERS
-
-export const getUsers = async (req , res)=>{}
-
-
-//& POST USERS
-export const createUsers = async (req , res)=>{}
-
-//& PUT USERS
-export const updateUsers = async (req , res)=>{}
-
-//& DELETE USERS
-export const deleteUsers = async (req , res)=>{}
+export const getUser = async (req, res) => {}
+export const createUser = async (req, res) => {}
+export const updateUser = async (req, res) => {}
+export const deleteUser = async (req, res) => {}
 
 
-
+  

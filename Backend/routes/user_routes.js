@@ -1,20 +1,18 @@
-//* separately adding routes for users to maintain the code clean.
-
 import express from 'express';
-import { createUsers, deleteUsers, getUsers, updateUsers } from '../controller/user_controller';
-const router = express.Router();
+import { getUser } from '../controller/user_controller';
 
-//& GET USERS
+const Route = express.Router();
 
-router.get('/',getUsers)
+//& GET
+Route.get('/' , getUser);
 
-//& POST USERS
-router.post('/',createUsers)
+//& POST
+Route.post('/' , createUser);
 
-//& PUT USERS
-router.put('/:id',updateUsers)
+//& PUT
+Route.put('/:id', updateUser);
 
-//& DELETE USERS
-router.delete('/:id',deleteUsers)
+//& DELETE
+Route.delete('/:id', deleteUser);
 
-export default router;
+export default Route;
