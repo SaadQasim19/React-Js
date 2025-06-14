@@ -1,12 +1,12 @@
 import express from "express";
-import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 dotenv.config();
-import user_routes from "./routes/user.js";
+import user_routes from "./routes/user_routes.js";
+import connectDB from "./config/db.js";
 
 const app = express();
-const Port = process.env.PORT || 3000;
+const Port = process.env.PORT || 8000;
 
 //& MiddleWare
 app.use(cors());
@@ -17,15 +17,8 @@ app.use("/api/user", user_routes);
 
 //& MongoDB Connection
 
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => {
-    console.log("MongoDB connected successfully");
-  })
-  .catch((err) => {
-    console.error("MongoDB connection error:", err);
-  });
+connectDB();
 
 app.listen(Port, () => {
-  console.log(`Server is running on port https://localhost:${Port}`);
+  console.log(`Server is running on port http://localhost:${Port}`);
 });
